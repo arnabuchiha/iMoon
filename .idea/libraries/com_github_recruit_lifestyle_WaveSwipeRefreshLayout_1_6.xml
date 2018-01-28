@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.recruit-lifestyle:WaveSwipeRefreshLayout-1.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/WaveSwipeRefreshLayout-1.6.aar/0f54cf1c9153ef0ddf0f1bfb707f85fd/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/WaveSwipeRefreshLayout-1.6.aar/0f54cf1c9153ef0ddf0f1bfb707f85fd/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.recruit-lifestyle/WaveSwipeRefreshLayout/1.6/9d38628ef0c67c19e03359d0268fa99d494b4362/WaveSwipeRefreshLayout-1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

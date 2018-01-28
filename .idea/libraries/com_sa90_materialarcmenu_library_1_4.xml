@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.sa90.materialarcmenu:library-1.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.4.aar/135596ded3994f054d1d00909db48dbe/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.4.aar/135596ded3994f054d1d00909db48dbe/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sa90.materialarcmenu/library/1.4/9d393cbbe34b8f0e7a5813b1afa97b566a466ae0/library-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

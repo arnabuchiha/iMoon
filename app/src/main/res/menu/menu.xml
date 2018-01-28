@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="niot.imoon.MainActivity">
+    <item
+        android:id="@+id/refresh"
+        android:title="Refresh"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        android:visible="false"
+        />
+</menu>

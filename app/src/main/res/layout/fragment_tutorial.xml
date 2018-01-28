@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="niot.imoon.tutorial">
+
+    <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_swipeweb">
+
+    <WebView android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+
+</RelativeLayout>
