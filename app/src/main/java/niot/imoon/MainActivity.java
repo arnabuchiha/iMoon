@@ -97,8 +97,8 @@ ViewPager pager;
         frag_tut = new tutorial();
 
         adapter.addFragment(frag_about);
-        adapter.addFragment(frag_tut);
         adapter.addFragment(frag_realtdata);
+        adapter.addFragment(frag_tut);
         //adapter.addFragment(frag_dataavail);
         adapter.addFragment(frag_dev);
 
