@@ -56,10 +56,10 @@ ViewPager pager;
                 } else
                 if (tabId == R.id.tutorial) {
                     pager.setCurrentItem(2);
-                }  /*else
+                }  else
                 if (tabId == R.id.developers) {
                     pager.setCurrentItem(3);
-                } */
+                } 
             }
         });
 
@@ -75,10 +75,9 @@ ViewPager pager;
                 if (tabId == R.id.tutorial) {
                     pager.setCurrentItem(2);
                 }
-                /*else
-                if (tabId == R.id.developers) {
+                  else if (tabId == R.id.developers) {
                     pager.setCurrentItem(3);
-                } */
+                } 
             }
         });
 
@@ -92,8 +91,8 @@ ViewPager pager;
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         frag_about = new aboutus();
-        //frag_dataavail = new dataavailability();
-        //frag_dev = new developers();
+        frag_dataavail = new dataavailability();
+        frag_dev = new developers();
         frag_realtdata = new realtimedata();
         frag_tut = new tutorial();
 
@@ -101,7 +100,7 @@ ViewPager pager;
         adapter.addFragment(frag_tut);
         adapter.addFragment(frag_realtdata);
         //adapter.addFragment(frag_dataavail);
-        //adapter.addFragment(frag_dev);
+        adapter.addFragment(frag_dev);
 
         pager.setAdapter(adapter);
         pager.setPageTransformer(true, new CubeOutTransformer());
