@@ -17,5 +17,11 @@
         icon="@drawable/realdata"
         title="Buoy Tutorial"
         barColorWhenSelected="#72FEE7"/>
+    
+     <tab
+        id="@+id/developers"
+        icon="@drawable/devp"
+        title="Developers"
+        barColorWhenSelected="#72FEE7"/>
 
 </tabs>
