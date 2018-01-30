@@ -130,7 +130,7 @@ public class aboutus extends Fragment {
                 startActivity(myIntent);
             }
         });
-        
+
         return v;
 
 }
