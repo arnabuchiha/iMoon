@@ -52,14 +52,14 @@ public class realtimedata extends Fragment{
             public void onResponse(Call<BuoyDataAdapter> call, Response<BuoyDataAdapter> response) {
                 List<Row> row = response.body().getRow();
                 //See the response
-                System.out.println("HAHA: " + response.raw().toString());
+                //System.out.println("HAHA: " + response.raw().toString());
                 //List<Translation> list = data.getTranslations();
 
                 ListIterator<Row> los = row.listIterator();
                 //String txt1 = "";
                 while (los.hasNext()) {
                     buoys.add(los.next().getParameterBuoyID());
-                    System.out.println(buoys);
+                    //System.out.println(buoys);
                 }
 
                 mAdapter = new ListAdapters(getActivity().getBaseContext(),buoys);
@@ -80,7 +80,7 @@ public class realtimedata extends Fragment{
 
             @Override
             public void onFailure(Call<BuoyDataAdapter> call, Throwable t) {
-                Toast.makeText(getActivity(), "Translate failed", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Fetching failed...", Toast.LENGTH_LONG).show();
             }
         });
 

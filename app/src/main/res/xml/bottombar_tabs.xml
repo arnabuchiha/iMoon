@@ -5,18 +5,18 @@
         icon="@drawable/aboutus"
         title="Home"
         barColorWhenSelected="#a373fc"/>
-
-    <tab
-        id="@+id/tutorial"
-        icon="@drawable/tutorial"
-        title="Real Time Data"
-        barColorWhenSelected="#795548"/>
-
     <tab
         id="@+id/realtimedata"
         icon="@drawable/realdata"
-        title="Buoy Tutorial"
+        title="Real Time Data"
         barColorWhenSelected="#72FEE7"/>
+    <tab
+        id="@+id/tutorial"
+        icon="@drawable/tutorial"
+        title="Tutorial"
+        barColorWhenSelected="#795548"/>
+
+
     <tab
         id="@+id/developers"
         icon="@drawable/devp"
