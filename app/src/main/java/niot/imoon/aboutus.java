@@ -61,7 +61,7 @@ public class aboutus extends Fragment {
         //////////
 
         ft= getFragmentManager().beginTransaction();
-        ft.replace(R.id.container_frag,aboutniot);
+        ft.replace(R.id.container_frag,buoy_status_map);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         ft.addToBackStack(null);
         ft.commit();
