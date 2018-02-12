@@ -41,6 +41,7 @@ ViewPager pager;
         mAuth = FirebaseAuth.getInstance();
         
         pager = (ViewPager)findViewById(R.id.viewpager);
+        pager.setOffscreenPageLimit(2);
         setUpViewPager(pager);
 
         bottomBar = (BottomBar) findViewById(R.id.bottomBar);

@@ -2,12 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="niot.imoon.MainActivity">
+    tools:context="niot.imoon.tutorial">
     <item
         android:id="@+id/refresh"
-        android:title="Refresh"
-        app:showAsAction="ifRoom"
         android:icon="@drawable/ic_refresh_white_24dp"
-        android:visible="false"
-        />
+        android:title="Refresh"
+        app:showAsAction="ifRoom" />
 </menu>
