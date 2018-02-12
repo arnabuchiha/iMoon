@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="niot.imoon.MainActivity">
 
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-
-    <com.roughike.bottombar.BottomBar
-        android:id="@+id/bottomBar"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="bottom"
-        android:layout_alignParentBottom="true"
-        app:bb_tabXmlResource="@xml/bottombar_tabs"
-        app:bb_activeTabColor="@color/white"
-        app:bb_behavior="shy"/>
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-</android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#fff"
+        android:theme="@style/BottomBarTheme"
+        app:itemIconTint="@drawable/selector_bottom_nav_view"
+        app:itemTextColor="@drawable/selector_bottom_nav_view"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

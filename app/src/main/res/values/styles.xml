@@ -20,6 +20,9 @@
         <item name="android:background">@drawable/fab_label_background</item>
         <item name="android:textColor">@color/white</item>
     </style>
+    <style name="BottomBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorTabSelected</item>
+    </style>
 
 
     <style name="LinearLayout" />
@@ -58,6 +61,7 @@
         <item name="android:background">@drawable/bg_white</item>
         <item name="android:layout_marginLeft">14dp</item>
     </style>
+
 
 
 </resources>

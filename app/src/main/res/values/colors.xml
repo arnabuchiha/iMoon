@@ -27,4 +27,8 @@
     <color name="blue_semi_transparent_pressed">#80738ffe</color>
     <color name="green">#0099a7</color>
     <color name="saffron">#F4B63E</color>
+
+    <color name="colorTabSelected">#3b5998</color>
+
+    <color name="colorTabUnselected">#222222</color>
 </resources>
