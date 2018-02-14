@@ -18,13 +18,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/*import com.aaruush16.webarch.aaruush16.R;
-import com.aaruush16.webarch.aaruush16.VolleySingleton.AppController;
-import com.android.volley.toolbox.ImageLoader;*/
-
-/**
- * Created by Rishi on 03-09-2016.
- */
 public class ViewFlipperAdapter extends BaseFlipAdapter {
 
     private final int PAGES = 10;

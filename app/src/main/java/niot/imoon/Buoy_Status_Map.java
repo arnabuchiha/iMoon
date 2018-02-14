@@ -3,6 +3,7 @@ package niot.imoon;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -36,17 +37,12 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Buoy_Status_Map extends Fragment implements OnMapReadyCallback,GoogleMap.OnMarkerClickListener {
     public Buoy_Status_Map() {
     }
-
     @Nullable
     private static View rootView;
-    public String bid[] = {"AD02", "AD04", "AD06", "AD07", "AD08", "AD09", "AD10", "BD08",
-            "BD09", "BD10", "BD11", "BD12", "BD13", "BD14", "CALVAL", "CB01",
-            "CB02", "CB04", "CB06", "TB03", "TB05", "TB06", "TB09", "TB12"};
+    public String bid[] = {"CALVAL", "CB01","CB02", "CB04", "CB06", "AD06", "AD07", "AD08", "AD09", "AD10", "BD08", "BD09", "BD10", "BD11", "BD12", "BD13", "BD14"};
 
-    public Double lat[] = {14.86, 8.49, 18.51, 15.04, 11.91, 8.25, 10.32, 18.16, 17.85, 16.50, 13.48, 10.50, 14.00, 7.00, 10.61, 11.59, 10.87, 15.40, 13.10, 6.31, 10.99,
-            14.74, 17.31, 20.34};
-    public Double lon[] = {68.91, 73.11, 67.47, 68.89, 68.64, 73.35, 72.59, 89.67, 89.67, 87.99, 84.01, 94.00, 87.00, 88.06, 72.23, 92.60, 72.21, 73.77, 80.32, 88.60, 89.58, 89.57, 89.78, 67.55
-    };
+    public Double lat[] = {10.62,11.589,10.874,15.404,13.1,18.470734,14.963593,11.775299,8.228638,10.332642,17.774536,17.450439,16.489044,13.476318,10.43457,13.963989,6.564819};
+    public Double lon[] = {72.281,92.596,72.209,73.768,80.317,67.436188,69.001282,68.631866,73.303345,72.581512,89.20874,89.106201,87.963379,84.149689,94.005188,86.930115,88.203705};
 
     public Context mContext;
     private int MY_PERMISSION;
@@ -81,13 +77,12 @@ public class Buoy_Status_Map extends Fragment implements OnMapReadyCallback,Goog
 
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 
-
         if(ContextCompat.checkSelfPermission(mContext, android.Manifest.permission.ACCESS_FINE_LOCATION)== PackageManager.PERMISSION_GRANTED)
             map.setMyLocationEnabled(true);
 
 
-        for(int i=0; i<24; i++)
-            map.addMarker(new MarkerOptions().position(new LatLng(lat[i],lon[i])).title(bid[i]).snippet(Double.toString(lat[i])+"N\n"+ Double.toString(lon[i])+"E\n"));
+        for(int i=0; i<17; i++)
+           map.addMarker(new MarkerOptions().position(new LatLng(lat[i],lon[i])).title(bid[i]).snippet(Double.toString(lat[i])+"N\n"+ Double.toString(lon[i])+"E\n"));
 
         LatLng l = new LatLng(21.7749,80.0917);
         map.moveCamera(CameraUpdateFactory.newLatLng(l));
@@ -128,6 +123,12 @@ public class Buoy_Status_Map extends Fragment implements OnMapReadyCallback,Goog
 
     @Override
     public boolean onMarkerClick(Marker marker) {
-        if(marker.getTitle().equals(bid[]))
+        /***
+         * //Just put the below code into the if statement
+         * Intent intent=new Intent(Buoy_Status_Map.this.getActivity(),buoy_info.class);
+         intent.putExtra("buoys",position);
+         startActivity(intent);
+         */
+        return true;
     }
 }
