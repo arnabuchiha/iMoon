@@ -33,7 +33,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Buoy_Status_Map extends Fragment implements OnMapReadyCallback {
+public class Buoy_Status_Map extends Fragment implements OnMapReadyCallback,GoogleMap.OnMarkerClickListener {
     public Buoy_Status_Map() {
     }
 
@@ -126,5 +126,8 @@ public class Buoy_Status_Map extends Fragment implements OnMapReadyCallback {
     }
 
 
-
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        if(marker.getTitle().equals(bid[]))
+    }
 }
