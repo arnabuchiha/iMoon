@@ -73,8 +73,8 @@ public class data_request extends Fragment {
     public String data[] = new String[13];
     public EditText d[] = new EditText[9];
     public DatePicker dp[] = new DatePicker[2];
-    public String label[] = {"Address: ","Name: ","Buoy Details: ", "Parameters: ", "Time Duration-From date: ", "To date: ", "Phone Number: ",
-            "Project Cost(Rs): ","Approval Details: ", "Own Research or Sponsored Project?:  "};
+    public String label[] = {"Address: ", "Name: ", "Buoy Details: ", "Parameters: ", "Time Duration:-\n\nFrom date: ", "To date: ", "Phone Number: ",
+            "Project Cost(Rs): ", "Approval Details: "};
     public boolean dataforconsult;
     private View mProgressView;
     private View mLoginFormView;
@@ -92,34 +92,92 @@ public class data_request extends Fragment {
         final View rootView = inflater.inflate(R.layout.fragment_data_request, container, false);
 
         mAuth = FirebaseAuth.getInstance();
-
+        context = getContext();
 
         mLoginFormView = rootView.findViewById(R.id.req_form);
         mProgressView = rootView.findViewById(R.id.login_progress);
-        d[0] = (EditText)rootView.findViewById(R.id.add);
-        d[1] = (EditText)rootView.findViewById(R.id.name);
-        d[2] = (EditText)rootView.findViewById(R.id.bdetail);
-        d[3] = (EditText)rootView.findViewById(R.id.para);
-        d[4] = (EditText)rootView.findViewById(R.id.ieddate);
-        d[5] = (EditText)rootView.findViewById(R.id.feddate);
+        d[0] = (EditText) rootView.findViewById(R.id.add);
+        d[1] = (EditText) rootView.findViewById(R.id.name);
+        d[2] = (EditText) rootView.findViewById(R.id.bdetail);
+        d[3] = (EditText) rootView.findViewById(R.id.para);
+        //d[4] = (EditText)rootView.findViewById(R.id.ieddate);
+        //d[5] = (EditText)rootView.findViewById(R.id.feddate);
+
+
+        d[4] = (EditText) rootView.findViewById(R.id.idate);
+        d[4].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Get Current Date
+                final Calendar c = Calendar.getInstance();
+                int mYear = c.get(Calendar.YEAR);
+                int mMonth = c.get(Calendar.MONTH);
+                int mDay = c.get(Calendar.DAY_OF_MONTH);
+
+                DatePickerDialog datePickerDialog = new DatePickerDialog(context,
+                        new DatePickerDialog.OnDateSetListener() {
+
+                            @Override
+                            public void onDateSet(DatePicker view, int year,
+                                                  int monthOfYear, int dayOfMonth) {
+
+                                d[4].setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+
+                            }
+                        }, mYear, mMonth, mDay);
+                datePickerDialog.show();
+
+            }
+        });
+
+
+        d[5] = (EditText) rootView.findViewById(R.id.fdate);
+        d[5].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Get Current Date
+                final Calendar c = Calendar.getInstance();
+                int mYear = c.get(Calendar.YEAR);
+                int mMonth = c.get(Calendar.MONTH);
+                int mDay = c.get(Calendar.DAY_OF_MONTH);
+
+                DatePickerDialog datePickerDialog = new DatePickerDialog(context,
+                        new DatePickerDialog.OnDateSetListener() {
+
+                            @Override
+                            public void onDateSet(DatePicker view, int year,
+                                                  int monthOfYear, int dayOfMonth) {
+
+                                d[5].setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+
+                            }
+                        }, mYear, mMonth, mDay);
+                datePickerDialog.show();
+
+            }
+        });
+
+/*
+
+
         dp[0] = (DatePicker)rootView.findViewById(R.id.idate);
         d[4].setText(dp[0].getDayOfMonth() + "/" + (dp[0].getMonth() + 1) + "/" + dp[0].getYear());
 
 
         dp[1] = (DatePicker)rootView.findViewById(R.id.fdate);
         d[4].setText(dp[1].getDayOfMonth() + "/" + (dp[1].getMonth() + 1) + "/" + dp[1].getYear());
-
+*/
         //d[9]= d[6], d[10]= d[7]
-        d[6] = (EditText)rootView.findViewById(R.id.pro);
-        d[7] = (EditText)rootView.findViewById(R.id.cost);
-        d[8] = (EditText)rootView.findViewById(R.id.apdet);
+        d[6] = (EditText) rootView.findViewById(R.id.pro);
+        d[7] = (EditText) rootView.findViewById(R.id.cost);
+        d[8] = (EditText) rootView.findViewById(R.id.apdet);
         d[8].setVisibility(View.GONE);
         d[7].setVisibility(View.GONE);
         RadioButton r = (RadioButton) rootView.findViewById(R.id.cons);
-        r.setOnClickListener(new View.OnClickListener(){
+        r.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                dataforconsult=true;
+            public void onClick(View v) {
+                dataforconsult = true;
                 d[8].setVisibility(View.VISIBLE);
                 d[7].setVisibility(View.VISIBLE);
                 rootView.findViewById(R.id.apdettext).setVisibility(View.VISIBLE);
@@ -127,10 +185,10 @@ public class data_request extends Fragment {
         });
 
         RadioButton o = (RadioButton) rootView.findViewById(R.id.owr);
-        o.setOnClickListener(new View.OnClickListener(){
+        o.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                dataforconsult=false;
+            public void onClick(View v) {
+                dataforconsult = false;
                 rootView.findViewById(R.id.apdettext).setVisibility(View.GONE);
                 d[8].setVisibility(View.GONE);
                 d[7].setVisibility(View.GONE);
@@ -138,61 +196,55 @@ public class data_request extends Fragment {
         });
 
         Button b = (Button) rootView.findViewById(R.id.submit);
-        b.setOnClickListener(new View.OnClickListener(){
+        b.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){                            // cost, approvaldetails;
+            public void onClick(View v) {                            // cost, approvaldetails;
                 attemptUpload();
             }
         });
 
-        return  rootView;
+        return rootView;
     }
 
 
-    public void attemptUpload(){
-        for(int i=0; i<9; i++)
+    public void attemptUpload() {
+        for (int i = 0; i < 9; i++)
             d[i].setError(null);
 
-        for(int i=0; i<7; i++)
+        for (int i = 0; i < 7; i++)
             data[i] = d[i].getText().toString();
 
-        if(dataforconsult)
-        {
+        if (dataforconsult) {
             data[8] = d[8].getText().toString();
             data[7] = d[7].getText().toString();
-        }
-
-        else
-        {
-            data[8]="";
-            data[7]="";
+        } else {
+            data[8] = "";
+            data[7] = "";
         }
 
 
-        boolean cancel=false;
+        boolean cancel = false;
         View focusView = null;
 
-        for(int i=0; i<7; i++)
-            if(TextUtils.isEmpty(data[i])){
+        for (int i = 0; i < 7; i++)
+            if (TextUtils.isEmpty(data[i])) {
                 d[i].setError("This field is required");
-                focusView=d[i];
-                cancel=true;
+                focusView = d[i];
+                cancel = true;
             }
 
 
-        if(cancel) focusView.requestFocus();
-        else
-        {
+        if (cancel) focusView.requestFocus();
+        else {
             showProgress(true);
 //            mAuthTask = new UserLoginTask(data);
             mAuthTask = new UserLoginTask();
-            mAuthTask.execute((Void)null);
-            for(int i=0; i<9; i++)
+            mAuthTask.execute((Void) null);
+            for (int i = 0; i < 9; i++)
                 d[i].setText("");
         }
 
     }
-
 
 
     /**
@@ -241,33 +293,28 @@ public class data_request extends Fragment {
 
             StringBuilder string = new StringBuilder();
 
-            string.append(mAuth.getCurrentUser().getEmail().toString()).toString();
-
-            if(dataforconsult){
+            if (dataforconsult) {
                 string.append("\n Sponsored Project").toString();
-                for(int i=0; i<9; i++){
-                    string.append("/n" + label[i]).append(" " + data[i]).toString();
+                for (int i = 0; i < 9; i++) {
+                    string.append("\n\n" + label[i]).append(" " + data[i]).toString();
                 }
 
-                string.append("\n"+label[9]).toString();
-            }
-            else {
+            } else {
 
-                string.append("\n Own Research").toString();
-                for(int i=0; i<7; i++){
-                    string.append("/n" + label[i]).append(" " + data[i]).toString();
+                string.append("\n\n Own Research").toString();
+                for (int i = 0; i < 7; i++) {
+                    string.append("\n\n" + label[i]).append(" " + data[i]).toString();
                 }
 
-                string.append("\n"+label[9]).toString();
 
             }
             Intent mail = new Intent(Intent.ACTION_SEND);
-            mail.putExtra(Intent.EXTRA_EMAIL,new String[]{"risabhmishra19@gmail.com"});
+            mail.putExtra(Intent.EXTRA_EMAIL, new String[]{"rsundar@niot.res.in"});
+            mail.putExtra(Intent.EXTRA_CC, new String[]{"venkat@incois.gov.in"});
             mail.putExtra(Intent.EXTRA_SUBJECT, new String[]{"NIOT Data Requisition"});
             mail.putExtra(Intent.EXTRA_TEXT, string.toString());
             mail.setType("message/rfc822");
             startActivity(mail);
-
 
 
             return true;
@@ -277,7 +324,7 @@ public class data_request extends Fragment {
         protected void onPostExecute(final Boolean success) {
             mAuthTask = null;
             showProgress(false);
-
+/*
             if(success)
             {
                 AlertDialog alertDialog = new AlertDialog.Builder(context).create();
@@ -307,6 +354,7 @@ public class data_request extends Fragment {
 
                 alertDialog.show();
             }
+            */
 
         }
 
@@ -315,6 +363,6 @@ public class data_request extends Fragment {
             mAuthTask = null;
             showProgress(false);
         }
-    }
 
+    }
 }

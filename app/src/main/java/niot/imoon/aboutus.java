@@ -34,7 +34,6 @@ public class aboutus extends Fragment {
 
 
     private RelativeLayout rl;
-    private SweetSheet mSweetSheet2;
     private Buoy_Status_Map buoy_status_map;
     private insat insat;
     private aboutniot aboutniot;
@@ -83,10 +82,6 @@ public class aboutus extends Fragment {
                 .usageId("100") //UNIQUE ID
                 .show();
 
-         //ft= getFragmentManager().beginTransaction();
-        //setupViewpager();
-//        mSweetSheet2.show();
-        //////////
 
         ft= getFragmentManager().beginTransaction();
         ft.replace(R.id.container_frag,buoy_status_map);
@@ -97,7 +92,6 @@ public class aboutus extends Fragment {
 
         ShapeDrawable drawable = new ShapeDrawable(new OvalShape());
         drawable.getPaint().setColor(getResources().getColor(R.color.white));
-        //((FloatingActionButton)v.findViewById(R.id.setter_drawable)).setIconDrawable(drawable);
 
         final FloatingActionButton buoy_map = (FloatingActionButton) v.findViewById(R.id.buoy_status_map);
         buoy_map.setOnClickListener(new View.OnClickListener() {

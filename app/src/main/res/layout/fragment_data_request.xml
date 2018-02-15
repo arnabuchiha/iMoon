@@ -101,16 +101,12 @@
                 android:layout_marginTop="5dp"
                 />
 
-            <DatePicker
-                android:id="@+id/idate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></DatePicker>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/ieddate"
+                    android:id="@+id/idate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Initial date"
@@ -118,18 +114,11 @@
                     />
             </android.support.design.widget.TextInputLayout>
 
-
-            <DatePicker
-                android:id="@+id/fdate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></DatePicker>
-
-
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/feddate"
+                    android:id="@+id/fdate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Final date"
