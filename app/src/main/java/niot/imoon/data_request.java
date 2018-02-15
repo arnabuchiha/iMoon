@@ -98,8 +98,8 @@ public class data_request extends Fragment {
         mProgressView = rootView.findViewById(R.id.login_progress);
         d[0] = (EditText) rootView.findViewById(R.id.add);
         d[1] = (EditText) rootView.findViewById(R.id.name);
-        d[2] = (EditText) rootView.findViewById(R.id.bdetail);
-        d[3] = (EditText) rootView.findViewById(R.id.para);
+        d[2] = (EditText) rootView.findViewById(R.id.bdetail);//Add Spinner Here
+        d[3] = (EditText) rootView.findViewById(R.id.para);//Add Spinner Here
         //d[4] = (EditText)rootView.findViewById(R.id.ieddate);
         //d[5] = (EditText)rootView.findViewById(R.id.feddate);
 

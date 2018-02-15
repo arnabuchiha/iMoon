@@ -9,19 +9,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b94093-6eba-4a3a-a6c3-734330267542" name="Default" comment="Done new Splash">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
+    <list default="true" id="72b94093-6eba-4a3a-a6c3-734330267542" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/niot/imoon/aboutus.java" afterPath="$PROJECT_DIR$/app/src/main/java/niot/imoon/aboutus.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/niot/imoon/data_request.java" afterPath="$PROJECT_DIR$/app/src/main/java/niot/imoon/data_request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_data_request.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_data_request.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,13 +51,13 @@
       <file leaf-file-name="data_request.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/niot/imoon/data_request.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="307" column="0" lean-forward="false" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="101" column="77" lean-forward="false" selection-start-line="101" selection-start-column="77" selection-end-line="101" selection-end-column="77" />
               <folding>
-                <marker date="1518723744942" expanded="false" signature="11911:12035" ph="(OnClickListener) (dialog, which) → {" />
-                <marker date="1518723744942" expanded="false" signature="12110:12141" ph="}" />
-                <marker date="1518723744942" expanded="false" signature="12548:12672" ph="(OnClickListener) (dialog, which) → {" />
-                <marker date="1518723744942" expanded="false" signature="12747:12778" ph="}" />
+                <marker date="1518724250153" expanded="false" signature="11947:12071" ph="(OnClickListener) (dialog, which) → {" />
+                <marker date="1518724250153" expanded="false" signature="12146:12177" ph="}" />
+                <marker date="1518724250153" expanded="false" signature="12584:12708" ph="(OnClickListener) (dialog, which) → {" />
+                <marker date="1518724250153" expanded="false" signature="12783:12814" ph="}" />
               </folding>
             </state>
           </provider>
@@ -1963,8 +1953,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/niot/imoon/Login.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/niot/imoon/SplashScreen.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_data_request.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/niot/imoon/data_request.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/niot/imoon/aboutus.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/niot/imoon/data_request.java" />
       </list>
     </option>
   </component>
@@ -2340,7 +2330,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518724023876" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518724250419" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2388,7 +2378,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518724023876" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518724250450" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2571,7 +2561,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518724023878" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518724250452" />
       </method>
     </configuration>
     <list size="1">
@@ -2778,7 +2768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518720730187</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Done new Data Request">
+      <created>1518724074600</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1518724074600</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2841,7 +2838,8 @@
     <MESSAGE value="Done new" />
     <MESSAGE value="Done new Update" />
     <MESSAGE value="Done new Splash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done new Splash" />
+    <MESSAGE value="Done new Data Request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done new Data Request" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3292,13 +3290,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/niot/imoon/data_request.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="307" column="0" lean-forward="false" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="101" column="77" lean-forward="false" selection-start-line="101" selection-start-column="77" selection-end-line="101" selection-end-column="77" />
           <folding>
-            <marker date="1518723744942" expanded="false" signature="11911:12035" ph="(OnClickListener) (dialog, which) → {" />
-            <marker date="1518723744942" expanded="false" signature="12110:12141" ph="}" />
-            <marker date="1518723744942" expanded="false" signature="12548:12672" ph="(OnClickListener) (dialog, which) → {" />
-            <marker date="1518723744942" expanded="false" signature="12747:12778" ph="}" />
+            <marker date="1518724250153" expanded="false" signature="11947:12071" ph="(OnClickListener) (dialog, which) → {" />
+            <marker date="1518724250153" expanded="false" signature="12146:12177" ph="}" />
+            <marker date="1518724250153" expanded="false" signature="12584:12708" ph="(OnClickListener) (dialog, which) → {" />
+            <marker date="1518724250153" expanded="false" signature="12783:12814" ph="}" />
           </folding>
         </state>
       </provider>
