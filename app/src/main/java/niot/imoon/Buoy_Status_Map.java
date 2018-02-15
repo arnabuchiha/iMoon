@@ -92,6 +92,7 @@ public class Buoy_Status_Map extends Fragment implements OnMapReadyCallback,Goog
         LatLng l = new LatLng(21.7749,80.0917);
         map.moveCamera(CameraUpdateFactory.newLatLng(l));
         map.moveCamera(CameraUpdateFactory.zoomTo(4));
+map.setOnMarkerClickListener(this);
 
         map.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
 

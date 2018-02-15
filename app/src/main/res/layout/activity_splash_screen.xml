@@ -6,18 +6,4 @@
     android:background="@color/white">
 
 
-    <com.github.jorgecastillo.FillableLoader
-        android:id="@+id/fillableLoader"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        app:fl_fillColor="#00baa4"
-        app:fl_originalWidth="512"
-        app:fl_originalHeight="512"
-        app:fl_strokeDrawingDuration="1000"
-        app:fl_fillDuration="10000"
-        app:fl_clippingTransform="waves"
-        app:fl_fillPercentage="40"
-        android:layout_gravity="center"
-        />
-
 </FrameLayout>

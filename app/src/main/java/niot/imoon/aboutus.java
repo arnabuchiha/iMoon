@@ -2,6 +2,7 @@ package niot.imoon;
 
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
@@ -22,6 +23,8 @@ import com.mingle.sweetpick.SweetSheet;
 import com.mingle.sweetpick.ViewPagerDelegate;
 import com.ogaclejapan.arclayout.ArcLayout;
 import com.sa90.materialarcmenu.ArcMenu;
+import com.wooplr.spotlight.SpotlightConfig;
+import com.wooplr.spotlight.SpotlightView;
 
 
 /**
@@ -39,6 +42,7 @@ public class aboutus extends Fragment {
     ArcMenu arcMenu;
     private data_request data_request;
     FragmentTransaction ft;
+    SpotlightView spotlight;
 
 
     @Override
@@ -55,6 +59,30 @@ public class aboutus extends Fragment {
         data_request=new data_request();
         settings=new settings();
         arcMenu=(ArcMenu)v.findViewById(R.id.arcMenu);
+
+
+
+        spotlight = new SpotlightView.Builder(getActivity())
+                .introAnimationDuration(400)
+                .enableRevealAnimation(true)
+                .performClick(true)
+                .fadeinTextDuration(400)
+                .headingTvColor(Color.parseColor("#eb273f"))
+                .headingTvSize(32)
+                .headingTvText("Hello")
+                .subHeadingTvColor(Color.parseColor("#ffffff"))
+                .subHeadingTvSize(16)
+                .subHeadingTvText("Click on Plus Button\nTo Explore more Options!")
+                .maskColor(Color.parseColor("#dc000000"))
+                .target(arcMenu)
+                .lineAnimDuration(400)
+                .lineAndArcColor(Color.parseColor("#eb273f"))
+                .dismissOnTouch(true)
+                .dismissOnBackPress(true)
+                .enableDismissAfterShown(true)
+                .usageId("100") //UNIQUE ID
+                .show();
+
          //ft= getFragmentManager().beginTransaction();
         //setupViewpager();
 //        mSweetSheet2.show();

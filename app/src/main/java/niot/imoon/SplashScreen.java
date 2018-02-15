@@ -9,27 +9,20 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.widget.FrameLayout;
 
+import com.daimajia.androidanimations.library.Techniques;
 import com.github.jorgecastillo.FillableLoader;
 import com.github.jorgecastillo.FillableLoaderBuilder;
 import com.github.jorgecastillo.clippingtransforms.WavesClippingTransform;
+import com.viksaa.sssplash.lib.activity.AwesomeSplash;
+import com.viksaa.sssplash.lib.cnst.Flags;
+import com.viksaa.sssplash.lib.model.ConfigSplash;
 
-public class SplashScreen extends AppCompatActivity {
+public class SplashScreen extends AwesomeSplash {
 
-    /** Duration of wait **/
-    private final int SPLASH_DISPLAY_LENGTH = 3000;
-    private FillableLoader fillableLoader;
-    private String path;
 
-    /** Called when the activity is first created. */
-    @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-        setContentView(R.layout.activity_splash_screen);
 
-        /* New Handler to start the Menu-Activity
-         * and close this Splash-Screen after some seconds.*/
-       fillableLoader = (FillableLoader)findViewById(R.id.fillableLoader);
-        path = "M 168.00,5.59\n" +
+
+      String path = "M 168.00,5.59\n" +
         "           C 227.50,15.59 272.86,61.62 282.75,121.00\n" +
         "             282.75,121.00 285.00,141.00 285.00,141.00\n" +
         "             285.63,195.21 255.98,246.05 207.00,270.20\n" +
@@ -553,20 +546,49 @@ public class SplashScreen extends AppCompatActivity {
         "             150.00,258.00 149.00,268.00 149.00,268.00\n" +
         "             146.84,262.10 145.68,258.55 139.00,258.00 Z";
 
-        fillableLoader.setSvgPath(path);
 
-        fillableLoader.postDelayed(new Runnable() {
-            @Override public void run() {
-                fillableLoader.start();
-                Intent mainIntent = new Intent(SplashScreen.this,Login.class);
-                SplashScreen.this.startActivity(mainIntent);
-                SplashScreen.this.finish();
-            }
-        },SPLASH_DISPLAY_LENGTH);
+    @Override
+    public void initSplash(ConfigSplash configSplash) {
+//Customize Circular Reveal
+        configSplash.setBackgroundColor(R.color.colorPrimary); //any color you want form colors.xml
+        configSplash.setAnimCircularRevealDuration(2000); //int ms
+        configSplash.setRevealFlagX(Flags.REVEAL_RIGHT);  //or Flags.REVEAL_LEFT
+        configSplash.setRevealFlagY(Flags.REVEAL_BOTTOM); //or Flags.REVEAL_TOP
+
+        //Choose LOGO OR PATH; if you don't provide String value for path it's logo by default
+/*
+        //Customize Logo
+        configSplash.setLogoSplash(R.drawable.ic_niot); //or any other drawable
+        configSplash.setAnimLogoSplashDuration(2000); //int ms
+        configSplash.setAnimLogoSplashTechnique(Techniques.FadeInUp);
+*/
+        configSplash.setPathSplash(path); //set path String
+        configSplash.setOriginalHeight(285); //in relation to your svg (path) resource
+        configSplash.setOriginalWidth(285); //in relation to your svg (path) resource
+        configSplash.setAnimPathStrokeDrawingDuration(3000);
+        configSplash.setPathSplashStrokeSize(4); //I advise value be <5
+        configSplash.setPathSplashStrokeColor(R.color.Wheat); //any color you want form colors.xml
+        configSplash.setAnimPathFillingDuration(3000);
+        configSplash.setPathSplashFillColor(R.color.bg_main); //path object filling color
+
+
+        //Customize Title
+        configSplash.setTitleSplash("iMoon");
+        configSplash.setTitleTextColor(R.color.Wheat);
+        configSplash.setTitleTextSize(50f); //float value
+        configSplash.setAnimTitleDuration(3000);
+        configSplash.setAnimTitleTechnique(Techniques.FlipInX);
+        configSplash.setTitleFont("fonts/Roboto-Regular.ttf"); //provide string to your font located in assets/fonts/
+
     }
 
 
-
-
+    @Override
+    public void animationsFinished() {
+        Intent mainIntent = new Intent(SplashScreen.this,Login.class);
+        startActivity(mainIntent);
     }
+
+
+}
 
