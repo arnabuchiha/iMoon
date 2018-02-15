@@ -7,6 +7,7 @@ import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -61,6 +62,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -80,6 +82,7 @@ public class data_request extends Fragment {
     public Context context;
     public String email;
     private FirebaseAuth mAuth;
+    Calendar myCalendar;
 
 
     @Override
@@ -101,6 +104,7 @@ public class data_request extends Fragment {
         d[5] = (EditText)rootView.findViewById(R.id.feddate);
         dp[0] = (DatePicker)rootView.findViewById(R.id.idate);
         d[4].setText(dp[0].getDayOfMonth() + "/" + (dp[0].getMonth() + 1) + "/" + dp[0].getYear());
+
 
         dp[1] = (DatePicker)rootView.findViewById(R.id.fdate);
         d[4].setText(dp[1].getDayOfMonth() + "/" + (dp[1].getMonth() + 1) + "/" + dp[1].getYear());
