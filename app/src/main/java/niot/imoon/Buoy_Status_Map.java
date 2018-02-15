@@ -30,6 +30,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.HashMap;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,6 +45,8 @@ public class Buoy_Status_Map extends Fragment implements OnMapReadyCallback,Goog
 
     public Double lat[] = {10.62,11.589,10.874,15.404,13.1,18.470734,14.963593,11.775299,8.228638,10.332642,17.774536,17.450439,16.489044,13.476318,10.43457,13.963989,6.564819};
     public Double lon[] = {72.281,92.596,72.209,73.768,80.317,67.436188,69.001282,68.631866,73.303345,72.581512,89.20874,89.106201,87.963379,84.149689,94.005188,86.930115,88.203705};
+
+    private HashMap<Marker, Integer> mHashMap = new HashMap<>();
 
     public Context mContext;
     private int MY_PERMISSION;
@@ -81,9 +85,10 @@ public class Buoy_Status_Map extends Fragment implements OnMapReadyCallback,Goog
             map.setMyLocationEnabled(true);
 
 
-        for(int i=0; i<17; i++)
-           map.addMarker(new MarkerOptions().position(new LatLng(lat[i],lon[i])).title(bid[i]).snippet(Double.toString(lat[i])+"N\n"+ Double.toString(lon[i])+"E\n"));
-
+        for(int i=0; i<17; i++) {
+            Marker marker = map.addMarker(new MarkerOptions().position(new LatLng(lat[i], lon[i])).title(bid[i]).snippet(Double.toString(lat[i]) + "N\n" + Double.toString(lon[i]) + "E\n"));
+            mHashMap.put(marker, i);
+        }
         LatLng l = new LatLng(21.7749,80.0917);
         map.moveCamera(CameraUpdateFactory.newLatLng(l));
         map.moveCamera(CameraUpdateFactory.zoomTo(4));
@@ -123,12 +128,11 @@ public class Buoy_Status_Map extends Fragment implements OnMapReadyCallback,Goog
 
     @Override
     public boolean onMarkerClick(Marker marker) {
-        /***
-         * //Just put the below code into the if statement
-         * Intent intent=new Intent(Buoy_Status_Map.this.getActivity(),buoy_info.class);
-         intent.putExtra("buoys",position);
+
+         int pos = mHashMap.get(marker);
+         Intent intent=new Intent(Buoy_Status_Map.this.getActivity(),buoy_info.class);
+         intent.putExtra("buoys",pos);
          startActivity(intent);
-         */
         return true;
     }
 }
