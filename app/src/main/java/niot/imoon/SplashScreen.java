@@ -570,15 +570,16 @@ public class SplashScreen extends AwesomeSplash {
         configSplash.setPathSplashStrokeColor(R.color.Wheat); //any color you want form colors.xml
         configSplash.setAnimPathFillingDuration(3000);
         configSplash.setPathSplashFillColor(R.color.bg_main); //path object filling color
+          configSplash.setAnimLogoSplashTechnique(Techniques.Wave);
 
 
         //Customize Title
-        configSplash.setTitleSplash("iMoon");
+        configSplash.setTitleSplash("iMoon v2.0\n Ocean Observation Systems");
         configSplash.setTitleTextColor(R.color.Wheat);
         configSplash.setTitleTextSize(50f); //float value
         configSplash.setAnimTitleDuration(3000);
-        configSplash.setAnimTitleTechnique(Techniques.FlipInX);
-        configSplash.setTitleFont("fonts/Roboto-Regular.ttf"); //provide string to your font located in assets/fonts/
+        configSplash.setAnimTitleTechnique(Techniques.Wave);
+        configSplash.setTitleFont("fonts/RobotoCondensed-B.ttf"); //provide string to your font located in assets/fonts/
 
     }
 

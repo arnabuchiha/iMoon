@@ -143,7 +143,7 @@
                     android:text="Computer Science Engineering" />
             </LinearLayout>
         </LinearLayout>
-<!--
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -153,7 +153,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="6dp"
             android:background="@android:color/white" />
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -164,7 +164,9 @@
                 android:id="@+id/logo"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginTop="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginEnd="93dp"
                 app:civ_border_color="#FFFFFF"
                 app:civ_border_width="2dp" />
 
@@ -174,14 +176,15 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:id="@+id/linearLayout">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12sp"
                     android:gravity="center"
-                    android:text="Sarthak Kumar"
+                    android:text="Under Guidance of:\n Mr. Sundar Ranganathan"
                     android:textColor="#fff"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -191,13 +194,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2sp"
                     android:gravity="center"
-                    android:text="Software Engineering"
+                    android:text="Scientist-C, Ocean Observation Systems"
                     android:textColor="#fff"
                     android:textSize="16sp"
                     android:typeface="monospace" />
             </LinearLayout>
-        </LinearLayout>
+        </RelativeLayout>
 
--->
+
     </LinearLayout>
 </ScrollView>

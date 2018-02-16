@@ -103,6 +103,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         adapter.addFragment(frag_dev);
 
         viewPager.setAdapter(adapter);
+        viewPager.setPageTransformer(true, new CubeOutTransformer());
     }
 
     @Override
