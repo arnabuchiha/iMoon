@@ -309,8 +309,8 @@ public class data_request extends Fragment {
 
             }
             Intent mail = new Intent(Intent.ACTION_SEND);
-            mail.putExtra(Intent.EXTRA_EMAIL, new String[]{"rsundar@niot.res.in"});
-            mail.putExtra(Intent.EXTRA_CC, new String[]{"venkat@incois.gov.in"});
+            mail.putExtra(Intent.EXTRA_EMAIL, new String[]{"venkat@incois.gov.in"});
+            mail.putExtra(Intent.EXTRA_CC, new String[]{"rsundar@niot.res.in"});
             mail.putExtra(Intent.EXTRA_SUBJECT, new String[]{"NIOT Data Requisition"});
             mail.putExtra(Intent.EXTRA_TEXT, string.toString());
             mail.setType("message/rfc822");

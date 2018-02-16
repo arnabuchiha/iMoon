@@ -1,6 +1,8 @@
 package niot.imoon;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,18 +16,34 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.dd.processbutton.iml.ActionProcessButton;
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.auth.api.signin.GoogleSignInResult;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
-public class Login extends AppCompatActivity {
+import java.util.HashMap;
 
+public class Login extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener{
+
+    private static final int RC_SIGN_IN = 100;
     private EditText inputEmail, inputPassword;
     private FirebaseAuth auth;
     private ProgressBar progressBar;
     private Button btnSignup, btnLogin, btnReset;
+    private GoogleApiClient mGoogleApiClient;
+    private GoogleSignInAccount account;
+    private Button signin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +128,83 @@ public class Login extends AppCompatActivity {
                                 }
                             }
                         });
+            }
+        });
+
+
+        signin = (Button)findViewById(R.id.button2);
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onsignin();
+            }
+        });
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
+
+
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
+                .build();
+
+    }
+
+
+
+    private void onsignin() {
+        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
+        startActivityForResult(signInIntent, RC_SIGN_IN);
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==RC_SIGN_IN) {
+            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            handleSignInResult(result);
+        }
+    }
+
+    public void handleSignInResult(GoogleSignInResult result)
+    {
+        if(result.isSuccess())
+        {
+            account=result.getSignInAccount();
+            firebaseAuthWithGoogle(account);
+
+
+        }
+    }
+
+
+    private void firebaseAuthWithGoogle(GoogleSignInAccount acct)
+    {
+        AuthCredential credential= GoogleAuthProvider.getCredential(acct.getIdToken(),null);
+        auth.signInWithCredential(credential).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful())
+                {
+                    final ProgressDialog progressDialog=new ProgressDialog(Login.this);
+                    progressDialog.setMessage("Signing In..");
+                    progressDialog.setCanceledOnTouchOutside(false);
+                    progressDialog.show();
+                    startActivity(new Intent(Login.this,MainActivity.class));
+                    progressDialog.dismiss();
+                    finish();
+                }
+                else
+                {
+                    Toast.makeText(Login.this,"Authentication Failed",Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
