@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -43,7 +44,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     private Button btnSignup, btnLogin, btnReset;
     private GoogleApiClient mGoogleApiClient;
     private GoogleSignInAccount account;
-    private Button signin;
+    private ImageButton signin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,7 +133,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         });
 
 
-        signin = (Button)findViewById(R.id.button2);
+        signin = (ImageButton)findViewById(R.id.button2);
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

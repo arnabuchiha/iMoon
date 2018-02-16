@@ -74,14 +74,14 @@
             android:text="OR"
             android:textColor="@android:color/black" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button2"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dip"
             android:layout_marginTop="10dip"
-            android:background="@color/colorAccent"
             android:text="Google Sign In"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            app:srcCompat="@drawable/logingoogle" />
 
         <Button
             android:id="@+id/btn_reset_password"
