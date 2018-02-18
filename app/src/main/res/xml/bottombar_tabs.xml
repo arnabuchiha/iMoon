@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/aboutus"
+        icon="@drawable/aboutus"
+        title="Home"
+        barColorWhenSelected="#a373fc"/>
+    <tab
+        id="@+id/realtimedata"
+        icon="@drawable/realdata"
+        title="Real Time Data"
+        barColorWhenSelected="#72FEE7"/>
+    <tab
+        id="@+id/tutorial"
+        icon="@drawable/tutorial"
+        title="Tutorial"
+        barColorWhenSelected="#795548"/>
+
+
+    <tab
+        id="@+id/developers"
+        icon="@drawable/devp"
+        title="Developers"
+        barColorWhenSelected="#18e705"/>
+</tabs>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "122102966233",
+    "firebase_url": "https://imoon-10740.firebaseio.com",
+    "project_id": "imoon-10740",
+    "storage_bucket": "imoon-10740.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122102966233:android:491435531f5c25aa",
+        "android_client_info": {
+          "package_name": "imoon.origin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122102966233-lpjl6fsbp2d7rvgvnt2ctedcjvnnqmro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "imoon.origin",
+            "certificate_hash": "ad5616291774f4f1070bab144586cf51fb7e60c9"
+          }
+        },
+        {
+          "client_id": "122102966233-9cfkv1bfedaf4o5q3jjhh3iga5pgoqh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Prewd0GDQs_CoL4Y1MPW-syVCMF_TW0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122102966233-9cfkv1bfedaf4o5q3jjhh3iga5pgoqh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

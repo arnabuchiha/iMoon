@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/aboutus"
+        android:icon="@drawable/aboutus"
+        android:iconTint="@color/colorTabUnselected"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/realtimedata"
+        android:icon="@drawable/realdata"
+        android:iconTint="@color/colorTabUnselected"
+        android:title="Real Time Data" />
+
+    <item
+        android:id="@+id/tutorial"
+        android:icon="@drawable/tutorial"
+        android:iconTint="@color/colorTabUnselected"
+        android:title="Tutorial" />
+
+    <item
+        android:id="@+id/developers"
+        android:icon="@drawable/devp"
+        android:iconTint="@color/colorTabUnselected"
+        android:title="Developers" />
+</menu>
