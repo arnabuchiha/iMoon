@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\265ab4c80df0d9c669a0962febdc3d46\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\60.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\5fa328df4d7bf1544349fd5c998931f7\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0b47adb52fc2940ba4f2ec7ae36a3f0c\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\b1161cace627da128a37881c71cb056b\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1b12397bc9f342b29d9e9108978828f99a6da579">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\38.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\tastytoast-0.1.1.aar\2cd639458e7f21f47ff3a81143499d5a\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b5056d372d28efcb1c937beaeaa0948fa6556e76">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.4.0\558e074f136fee609b8758480ecd00e286595137\firebase-client-jvm-2.4.0.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="558e074f136fee609b8758480ecd00e286595137">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\94086e9a058b88904094734e2b2aadf7\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.8.0\5a11f020cce2d11eb71ba916700600e18c4547e7\okhttp-3.8.0.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5a11f020cce2d11eb71ba916700600e18c4547e7">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\51.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.4.aar\60ee2f2b3dabe3a741e6872c2f3b4952\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\AwesomeSplash-v1.0.0.aar\107a91c5200dbbc580fffb022d4c5aa9\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6924ef2127a1fb106d13d701c25b2688223c0fad">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\Spotlight-1.2.3.aar\4d52fd7db3114fa9838d27031f550240\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0948ecc991ac51d76edc96bcb3725ec1c650b430">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\AndroidSweetSheet-1.1.0.aar\9126e2a319bfd5c1a8999807c4c4db02\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8e6e30a296f144126c62da545452456950e56b27">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\MultiSelectSpinner-c3051c6922.aar\329fabcbe5c85bde684cafe683908e2f\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="868b983e74f391572aba3b790e071770c050ab2d">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\material-1.2.2.aar\fd5a9841a39813554cc60f3cfcfad087\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="dde1ea8573633db3da4e8c42d541bfa7d03d6720">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.1.1.aar\4cee9435f37064eca56b7700cf4342cc\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e3a3d62fab67ccb83f386a4c092bfb5747ea15a7">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\materialtextfield-1.0.7.aar\b993f55327e7c469922b7ca31a4bc88e\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="89ba8466f3e32427af7aa725eb7be31a15c78a77">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\d6bc2558d5e1a21ae20ecfe89278bde6\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\0e18cbea0f1d037ca4ea93db95130334\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b5b6af36bacf1d812cd3dc45f9dcab9ea471ed91">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\library-1.5.0.aar\28f513446837de7b52dc35a945a85463\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="60a7395de373ab991276237d40857092bb1be3da">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\c93c0057e941795886b2e6f26ddecb7e\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.12\6ec0bbd3e161a73ed672284b587fd32309a86d7a\tubesock-0.0.12.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6ec0bbd3e161a73ed672284b587fd32309a86d7a">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\65.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\library-1.0.4.aar\97e2c71f8d112dc7cb2d9ba6986470a3\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88ccdbf844995d5c9c845e087068d27588b2d026">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\92d9748d9fbc6ec51a3b0f31f944837b\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f5ff5e3811e8c9485fd27f9052ae4d4d23a22d9d">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\c30c9078c95e7b8658b7bbf203cb82c3\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\42.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\bottom-bar-2.3.1.aar\fbff914da658a8ded83533c3954cd73f\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a9cbdabba632cbf8be001cdbf34110cf42a64015">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.4.0\f00bc767918ad9c89e5c13e25706d033a58e13c2\firebase-client-android-2.4.0.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f00bc767918ad9c89e5c13e25706d033a58e13c2">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\7cd635cd33763fd287e7a1023b1c9c5b\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\80315c6d2b36a36e39ca1b0f08296bbd\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\flipviewpager-1.0.0.aar\32b63ff6fcd94009f689a96b469548c0\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="961d79128f594dda45688dba408e9eb27cb55724">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\a99c39b492e024a700e20ba2dfc6d824\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\1a10ea8ddd7d7bfcb3154f05ea72a327\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\view-pager-transforms-1.2.32.aar\4f7e18852fd2bb754de1663760015d65\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="392c97a8270ccf3cc7fe6e0a5d97a5e97a61e65c">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\04cd6e9bb27a4741cab0f63b962ccf43\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\1815be9afee84a4159afe43da5f50d92\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\2b7f7512f02bcbc423c08bcdddd54157\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\41.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.0.4.aar\fb8b42dd70a5084cc802427dbe24d3cb\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0bffdc0bd4f7ca0e27c5bfeef39569f8da00aa26">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\67c3123935915d7c49b1f6c8ddd4ebdc\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\floatingactionbutton-1.10.1.aar\1c014e3b1920def5a64639de36108744\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f40cf334cdc8b098b74312e21c7741c6eefbeb0e">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\05982bac353495d695bb244f7f6d0684\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\39.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\3bfd3884460c429aaafc61110f3d4585\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcae52a60bc07924d370b4d376116cd8f8581f54">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\6f74df3388d0e209df6cf783ec1f2f32\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\56027dcae2abb65155995250009ae059\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.3.0\bcacde6a8ccedcc56c127403d26b76072fe6214d\retrofit-2.3.0.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bcacde6a8ccedcc56c127403d26b76072fe6214d">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\library-1.0.1.aar\b716bcf676fdc8272a5289211c5ef544\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\library-1.0.0.aar\37cd7728ce8302f2357cf4a08878c356\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="df7407b9bdc033b511f8135c3b6f23c4e71e4c3a">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\ae6b7759b37009f7a47140d0b9375c67\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.facebook.rebound\rebound\0.3.8\c8b90640dddaf1e7ad75d7cb00b09a44b3788f7e\rebound-0.3.8.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c8b90640dddaf1e7ad75d7cb00b09a44b3788f7e">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\62.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\aa67b3efdcd2e174167389af2ba44f72\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a4e41bdf9c31281377ec5dfff2dc8bf3\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e70a3fed299d84cd868614e11021664d72b8e488">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\67.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4ccf9412217ed9127aab10bf35e3a6b3\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\4.0.1\f43b36925363701633d01adb8e54df7150397a78\butterknife-4.0.1.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f43b36925363701633d01adb8e54df7150397a78">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\library-1.1.0.aar\cca3ce48677896f157056d082a57cda1\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e73be64ef3e56ecc035bd298d274136e2ad66d20">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\library-aar-1.0.0.aar\13da9596d248718bfc325be7e145ef1a\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\WaveSwipeRefreshLayout-1.6.aar\b762d6859e256a3d4895c904fe5f569e\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3f16e74358c80b2705db7c817ff1e37f0155cc81">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\a70b2a2ad70605434cf10eed2fc462d2\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c879101226d1b2aaf6edae3d7491de6fd56d2659">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\fillableloaders-1.03.aar\4a2f5cba9d24f090011ab1ba024d242a\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3633e7c413515440302d548cd00d1032e3fd537f">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\arnab\.gradle\caches\transforms-1\files-1.1\library-1.1.3.aar\599cef4bba09ff467ce10a6e8d71a2f6\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
+        <dex dex="D:\My android projects\iMoon-\app\build\intermediates\transforms\preDex\release\17.jar" />
+    </item>
+
+</items>
