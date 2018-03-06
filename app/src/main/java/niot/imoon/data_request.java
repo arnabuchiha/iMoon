@@ -3,6 +3,7 @@ package niot.imoon;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -272,7 +273,7 @@ public class data_request extends Fragment {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {                            // cost, approvaldetails;
-                attemptUpload();
+                new task().execute("");
             }
         });
 
@@ -346,7 +347,32 @@ public class data_request extends Fragment {
 
 
     }
+    class task extends AsyncTask<String,Void,String>{
+
+        @Override
+        protected void onPreExecute()
+        {
+            super.onPreExecute();
+        }
+        @Override
+        protected String doInBackground(String... params) {
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    attemptUpload();
+                }
+            });
+            return null;
+        }
+        @Override
+        protected void onPostExecute(String result)
+        {
+            super.onPostExecute(result);
+
+        }
+    }
 
 }
+
 
 

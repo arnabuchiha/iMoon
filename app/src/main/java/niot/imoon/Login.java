@@ -137,7 +137,9 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                progressBar.setVisibility(View.VISIBLE);
                 onsignin();
+                progressBar.setVisibility(View.GONE);
             }
         });
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
